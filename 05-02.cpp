@@ -8,7 +8,7 @@
 #include <GLFW/glfw3.h>
 
 // Other includes
-#include "Shader.h"
+#include "05-02Shader.h"
 
 
 // Function prototypes
@@ -45,7 +45,7 @@ int main()
 
 
 	// Build and compile our shader program
-	Shader ourShader("shader.vs", "shader.frag");
+	Shader ourShader("05-02shader.vs", "05-02shader.frag");
 
 
 	// Set up vertex data (and buffer(s)) and attribute pointers
@@ -85,8 +85,10 @@ int main()
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
+	
 		// Draw the triangle
 		ourShader.Use();
+		ourShader.setUniform(0.3f);
 		glBindVertexArray(VAO);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 		glBindVertexArray(0);

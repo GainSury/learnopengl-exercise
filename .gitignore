@@ -7,3 +7,6 @@
 *.tlog
 *.lastbuildstate
 *test.cpp
+*test.vs
+*test.frag
+*test.h

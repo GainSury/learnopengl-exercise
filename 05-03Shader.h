@@ -45,7 +45,7 @@ public:
 		}
 		const GLchar* vShaderCode = vertexCode.c_str();
 		const GLchar * fShaderCode = fragmentCode.c_str();
-		
+
 		// 2. Compile shaders
 		GLuint vertex, fragment;
 		GLint success;
@@ -93,6 +93,12 @@ public:
 	void Use()
 	{
 		glUseProgram(this->Program);
+	}
+
+	void setUniform(GLfloat offset)
+	{
+		GLint offsetLocation = glGetUniformLocation(this->Program, "offset");
+		glUniform1f(offsetLocation, offset);
 	}
 };
 
