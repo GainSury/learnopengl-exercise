@@ -1,2 +1,3 @@
 # learnopengl-exercise
 this is some solutions for exercise about [learnopengl.org](learnopengl.org)
+file like xx-yy,xx is chaper 01,02,03,and yy is exercise 01,02,03...
