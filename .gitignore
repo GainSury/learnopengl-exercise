@@ -1,1 +1,8 @@
 *.vcxproj*
+*.obj
+*.CppClean.log
+*.log
+*.idb
+*.pdb
+*.tlog
+*.lastbuildstate
